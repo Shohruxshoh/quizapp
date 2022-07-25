@@ -1,0 +1,10 @@
+{% extends 'Quiz/dependencies.html' %}
+
+
+{% block content %}
+<div class="list-group">
+    {% for i in category %}
+        <a href="{{i.get_absolute_url}}" class="list-group-item list-group-item-action">{{i.name}}</a>
+    {% endfor %}
+</div>
+{% endblock content %}
